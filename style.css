@@ -4,7 +4,7 @@
 ===========================*/
 :root {
   --font-family: "Inter", sans-serif;
-  --primary: #155bd5;
+  --primary: #174571;
   --primary-dark: #1c3ab6;
   --primary-light: #e2f1ff;
   --accent: #00d4d7;
@@ -1406,10 +1406,63 @@ p {
 .pricing-style-fourteen .table-list li i.deactive {
   color: var(--dark-3);
 }
+.pricing-style-fourteen .table-list li.deactive {
+  color: var(--gray-3);
+}
+li.deactive i {
+  opacity: 0.5;
+}
+.text-center p, .justify-content-center p, .justify-content-center ol, .justify-content-center ul {
+  text-align: left;
+}
+.light-text h3 {
+  margin-top: 1em;
+}
+.justify-content-center ul, .justify-content-center ol {
+  margin-left: auto;
+  margin-right: auto;
+}
+.justify-content-center ul {
+  list-style-type: disc;
+}
+.justiify-content-center ul li, .justify-content-center ol li {
+  margin-bottom: 1em;
+  width: 30em;
 
-
-
-
+}
+.cta-number {
+  list-style-type:decimal;
+  width: 30em;
+  margin-left: auto;
+  margin-right: auto;
+  color: #000;
+}
+.cta-list {
+  list-style-type: disc;
+  width: 30em;
+  margin-left: auto;
+  margin-right: auto;
+  color: #000;
+}
+.cta-list li {
+  margin-bottom: 1em;
+}
+.cta-number li p, .cta-list li p {
+  margin-top: 0.5em;
+  font-size: 0.9em;
+  color: #000;
+}
+.cta-box {
+  background: #fff;
+  color: #000;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5em;
+  border-radius: 1em;
+  margin-top: 1em;
+}
+.cta-cta h3, .call-action .inner-content .cta-cta p {
+  color: #fff;
+}
 /* ===== Buttons Css ===== */
 .call-action .inner-content .light-rounded-buttons .primary-btn-outline {
   border-color: var(--primary);
@@ -1425,7 +1478,9 @@ p {
   border-color: var(--gray-4);
   pointer-events: none;
 }
-
+.inner-content h3 {
+  margin-bottom: 1em;
+}
 /*===== call action four =====*/
 .call-action {
   z-index: 2;
@@ -1465,7 +1520,7 @@ p {
   color: var(--white);
 }
 .call-action .inner-content p {
-  color: var(--white);
+  color: var(--black);
 }
 .call-action .inner-content .light-rounded-buttons {
   margin-top: 45px;
@@ -1776,7 +1831,7 @@ p {
 /* Footer eleven css */
 .footer-eleven {
   padding-top: 100px;
-  padding-bottom: 100px;
+  padding-bottom: 0;
   background-color: var(--white);
   position: relative;
 }
@@ -1864,8 +1919,12 @@ p {
   color: var(--dark-3);
 }
 .footer-eleven .newsletter-form {
-  margin-top: 30px;
   position: relative;
+}
+.f-about {
+  float: right;
+  margin-bottom: 5em;
+  margin-top:0;
 }
 .footer-eleven .newsletter-form input {
   height: 55px;
@@ -1904,4 +1963,35 @@ p {
 .footer-eleven .newsletter-form .sub-btn:hover {
   color: var(--white);
   background-color: var(--primary-dark);
+}
+.services-eight .single-services .service-icon {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.article {
+  height: 4em;
+  overflow: hidden;
+  display: -webkit-box;
+  text-overflow: ellipsis;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+}
+.showmore .article {
+  --webkit-line-clamp: unset;
+  overflow: visible;
+  display: block;
+  height: auto;
+}
+.readmore {
+  display:  inline-block;
+}
+.showless {
+  display: none;
+}
+.showmore .readmore {
+  display: none;
+}
+.showmore .showless {
+  display: inline-block;
 }
